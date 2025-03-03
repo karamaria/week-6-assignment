@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+  font-family: 'Press Start 2P', cursive;
+  background-color: #000000;
+  color: red;
+  text-shadow: 2px 2px 3px blue, -1px -1px 1px yellow;
+  text-align: center;
+  overflow: hidden;  
+}
+
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  padding: 6rem;
+  width: 100%;
+}
+
+.game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  justify-content: center;
+  margin-right: 20px;
+  color: red;
+  text-shadow: 2px 2px 3px blue, -1px -1px 1px yellow;
+}
+
+.shop-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  width: 280px;
+  margin-left: 30px;
+  font-size: 1rem;
+  max-height: 370px;
+  overflow-y: scroll;
+  border: 2px solid #000000;
+  border-radius: 20px;
+}
+
+.shop-items-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.shop-item {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-align: center;
+  background-color: #f9f9f9;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.shop-item button {
+  padding: 5px 10px;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+
+.ruby {
+  width: 200px;
+  cursor: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/5a52b34e-2609-44d8-aa3e-afe1338b77b5/d8jpe5f-804bbd98-8e88-4494-881f-27c2c552fa7f.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzVhNTJiMzRlLTI2MDktNDRkOC1hYTNlLWFmZTEzMzhiNzdiNVwvZDhqcGU1Zi04MDRiYmQ5OC04ZTg4LTQ0OTQtODgxZi0yN2MyYzU1MmZhN2YucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.0ZHn4l5cCG4VXHd7FsyUGTsJS-equvg6kcX4IL2XrgQ),auto !important;
+  transition: transform 0.2s ease-in-out;
+  animation: pulse 1.5s infinite alternate;
+}
+
+.ruby:hover {
+  transform: scale(1.1);
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    filter: drop-shadow(0 0 5px #ff2222);
+  }
+  100% {
+    transform: scale(1.05);
+    filter: drop-shadow(0 0 15px #ff4444);
+  }
+}
+
+.gem-display {
+  font-size: 2rem;
+  padding: 0 1rem;
+}
+
+
+@media (max-width: 768px) {
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  
+  .main-container {
+    flex-direction: column;
+    align-items: center; 
+    padding: 1rem;
+  }
+
+  .game-container {
+    padding: 0.5rem;
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .shop-container {
+    padding: 0.5rem;
+    width: 75%;
+    max-height: none;
+    overflow-y: visible;
+    background-color: transparent;
+  }
+
+  .ruby {
+    width: 200px;
+  }
+
+  .gem-display {
+    font-size: 1.5rem;
+  }
+}
