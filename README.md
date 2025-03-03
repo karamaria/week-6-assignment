@@ -4,4 +4,4 @@ The game stores your progress locally, so the gems you've collected persist even
 
 For styling, I made the application responsive and added improvements to the user interface.
 
-Although I had plans to change the cursor to a custom image, I couldn’t fully implement it, possibly needing additional changes in the App.jsx?? I added that line - cursor: url(https://images-...), auto !important), but it didn’t work as expected :(
+Although I had plans to change the cursor to a custom image, I couldn’t fully implement it, possibly needing additional changes in the App.jsx?? I added that line - cursor: url(https://images-...), auto !important, but it didn’t work as expected :(
